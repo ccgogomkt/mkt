@@ -6,13 +6,14 @@
     <title>CCgogoMKT</title>
     <style>
         :root {
-            --bg-color: #0d0f14;          /* 极简深邃纯黑底 */
-            --container-bg: #161922;      /* 精致暗色卡片背景 */
-            --text-main: #f3f4f6;          /* 主文字纯白 */
-            --text-muted: #a5a9b8;         /* 次要信息灰紫 */
-            --accent-primary: #dcd0ff;    /* 核心亮淡紫（完全替代原来的黄色文字） */
-            --accent-secondary: #bdb2ff;  /* 柔和薰衣草紫（用于小装饰线和图标） */
-            --border-color: #232838;       /* 微弱高级质感边框 */
+            /* 强制覆盖：全新优雅纯正浅紫配色方案 */
+            --bg-color: #0b0c10 !important;          
+            --container-bg: #141722 !important;      
+            --text-main: #f3f4f6 !important;          
+            --text-muted: #a3a8b4 !important;         
+            --accent-purple-light: #dcd0ff !important; /* 纯正亮淡紫 */
+            --accent-purple-deep: #b3a5ef !important;  /* 柔和薰衣草紫 */
+            --border-purple: #232736 !important;       
         }
 
         * {
@@ -22,9 +23,9 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color) !important;
+            color: var(--text-main) !important;
             line-height: 1.6;
             padding: 40px 20px;
         }
@@ -38,25 +39,25 @@
             text-align: center;
             margin-bottom: 40px;
             padding-bottom: 20px;
-            border-bottom: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-purple);
         }
 
         header h1 {
             font-size: 2.2rem;
             font-weight: 700;
             letter-spacing: -0.025em;
-            background: linear-gradient(to right, var(--accent-primary), var(--accent-secondary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            background: linear-gradient(to right, var(--accent-purple-light), var(--accent-purple-deep)) !important;
+            -webkit-background-clip: text !important;
+            -webkit-text-fill-color: transparent !important;
         }
 
-        /* 每一个大板块的标题：全面换成淡紫色 */
+        /* 大板块标题强制变为淡紫色 */
         .section-title {
             font-size: 1.25rem;
-            color: var(--accent-primary);
+            color: var(--accent-purple-light) !important;
             margin: 35px 0 15px 0;
             padding-left: 10px;
-            border-left: 3px solid var(--accent-secondary);
+            border-left: 3px solid var(--accent-purple-deep) !important;
             letter-spacing: 0.05em;
             font-weight: 600;
         }
@@ -66,8 +67,8 @@
         }
 
         .card {
-            background-color: var(--container-bg);
-            border: 1px solid var(--border-color);
+            background-color: var(--container-bg) !important;
+            border: 1px solid var(--border-purple) !important;
             border-radius: 10px;
             padding: 18px 20px;
             margin-bottom: 12px;
@@ -78,21 +79,20 @@
             align-items: center;
         }
 
-        /* 鼠标悬停时，边框和霓虹阴影都呈现浪漫淡紫色 */
         .card:hover {
             transform: translateY(-2px);
-            border-color: var(--accent-primary);
-            box-shadow: 0 8px 24px rgba(189, 178, 255, 0.2); 
+            border-color: var(--accent-purple-light) !important;
+            box-shadow: 0 8px 24px rgba(179, 165, 239, 0.25) !important; 
         }
 
         .card-title {
             font-size: 1.05rem;
             font-weight: 500;
-            color: var(--text-main);
+            color: var(--text-main) !important;
         }
 
         .card-icon {
-            color: var(--accent-secondary);
+            color: var(--accent-purple-deep) !important;
             font-size: 1.1rem;
             opacity: 0.9;
         }
@@ -100,12 +100,12 @@
         footer {
             margin-top: 50px;
             padding-top: 25px;
-            border-top: 1px solid var(--border-color);
+            border-top: 1px solid var(--border-purple);
         }
 
         .contact-box {
-            background: linear-gradient(135deg, #161922 0%, #1e2230 100%);
-            border: 1px solid var(--border-color);
+            background: linear-gradient(135deg, #141722 0%, #1c202e 100%) !important;
+            border: 1px solid var(--border-purple) !important;
             border-radius: 12px;
             padding: 24px;
             text-align: center;
@@ -113,7 +113,7 @@
 
         .contact-title {
             font-size: 1.15rem;
-            color: var(--text-main);
+            color: var(--text-main) !important;
             margin-bottom: 15px;
             font-weight: 600;
         }
@@ -122,12 +122,11 @@
             display: block;
             margin: 8px 0;
             font-size: 1rem;
-            color: var(--text-muted);
+            color: var(--text-muted) !important;
         }
 
-        /* Contact 里面的重点提示文字换成淡紫 */
         .contact-info strong {
-            color: var(--accent-primary);
+            color: var(--accent-purple-light) !important;
         }
 
         @media (max-width: 600px) {
@@ -154,55 +153,4 @@
                 <div class="card-icon">🖼️</div>
             </a>
             <a href="服务排期表2.jpg" target="_blank" class="card">
-                <div class="card-title">Camellia & Luxloop 月服务费明细表（初版）</div>
-                <div class="card-icon">🖼️</div>
-            </a>
-            <a href="服务排期表3.jpg" target="_blank" class="card">
-                <div class="card-title">Camellia & Luxloop 自创/博主/Meta 打包优惠价</div>
-                <div class="card-icon">🖼️</div>
-            </a>
-        </div>
-
-        <div class="section-title">MKT训练营</div>
-        <div class="grid">
-            <a href="品牌营销全案思维框架训练营.pdf" target="_blank" class="card">
-                <div class="card-title">品牌营销全案思维框架训练营</div>
-                <div class="card-icon">📄</div>
-            </a>
-            <a href="Meta Ads实战训练营.pdf" target="_blank" class="card">
-                <div class="card-title">Meta Ads实战训练营</div>
-                <div class="card-icon">📄</div>
-            </a>
-        </div>
-
-        <div class="section-title">出海营销</div>
-        <div class="grid">
-            <a href="出海营销陪跑群.pdf" target="_blank" class="card">
-                <div class="card-title">出海营销陪跑群</div>
-                <div class="card-icon">📄</div>
-            </a>
-            <a href="出海营销增长咨询.pdf" target="_blank" class="card">
-                <div class="card-title">出海营销增长咨询</div>
-                <div class="card-icon">📄</div>
-            </a>
-        </div>
-
-        <div class="section-title">MKT求职</div>
-        <div class="grid">
-            <a href="MKT1v1求职服务.png" target="_blank" class="card">
-                <div class="card-title">MKT 1v1 求职服务</div>
-                <div class="card-icon">🖼️</div>
-            </a>
-        </div>
-
-        <footer>
-            <div class="contact-box">
-                <div class="contact-title">Contact Me</div>
-                <div class="contact-info"><strong>WeChat:</strong> xieqiao172132</div>
-                <div class="contact-info"><strong>Email:</strong> ccgogo2024@gmail.com</div>
-            </div>
-        </footer>
-    </div>
-
-</body>
-</html>
+                <div class="card-
