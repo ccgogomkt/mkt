@@ -10,8 +10,8 @@
             --container-bg: #161f2b;
             --text-main: #f3f4f6;
             --text-muted: #9ca3af;
-            --accent-primary: #e0a96d; /* 柔和暗金 */
-            --accent-secondary: #dd7a6f; /* 珊瑚粉/复古红 */
+            --accent-primary: #e0a96d; 
+            --accent-secondary: #dd7a6f; 
             --border-color: #243242;
         }
 
@@ -146,11 +146,11 @@
 
         <div class="section-title">MKT训练营</div>
         <div class="grid">
-            <a href="品牌营销全案思维框架训练营.pdf" target="_blank" class="card">
+            <a href="https://example.com" target="_blank" class="card">
                 <div class="card-title">品牌营销全案思维框架训练营</div>
                 <div class="card-icon">📄</div>
             </a>
-            <a href="Meta Ads实战训练营.pdf" target="_blank" class="card">
+            <a href="https://example.com" target="_blank" class="card">
                 <div class="card-title">Meta Ads实战训练营</div>
                 <div class="card-icon">📄</div>
             </a>
@@ -158,11 +158,11 @@
 
         <div class="section-title">出海营销</div>
         <div class="grid">
-            <a href="出海营销陪跑群.pdf" target="_blank" class="card">
+            <a href="https://example.com" target="_blank" class="card">
                 <div class="card-title">出海营销陪跑群</div>
                 <div class="card-icon">📄</div>
             </a>
-            <a href="出海营销增长咨询.pdf" target="_blank" class="card">
+            <a href="https://example.com" target="_blank" class="card">
                 <div class="card-title">出海营销增长咨询</div>
                 <div class="card-icon">📄</div>
             </a>
@@ -170,7 +170,7 @@
 
         <div class="section-title">MKT求职</div>
         <div class="grid">
-            <a href="MKT1v1求职服务.png" target="_blank" class="card">
+            <a href="https://example.com" target="_blank" class="card">
                 <div class="card-title">MKT 1v1 求职服务</div>
                 <div class="card-icon">🖼️</div>
             </a>
