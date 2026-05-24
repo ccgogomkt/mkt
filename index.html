@@ -8,10 +8,10 @@
         :root {
             --bg-color: #0f141c;
             --container-bg: #161f2b;
-            --text-main: #f3f4f6; /* 白色/浅灰色字体 */
+            --text-main: #f3f4f6;
             --text-muted: #9ca3af;
-            --accent-primary: #dcd0ff;   /* 替换为：优雅淡紫色（用于标题、加粗字及悬停边框） */
-            --accent-secondary: #b3a5ef; /* 替换为：柔和薰衣草紫（用于左侧小装饰线和图标） */
+            --accent-primary: #dcd0ff;  /* 仅修改此处：变为淡紫色 */
+            --accent-secondary: #b3a5ef;/* 仅修改此处：变为薰衣草紫 */
             --border-color: #243242;
         }
 
@@ -80,7 +80,7 @@
         .card:hover {
             transform: translateY(-2px);
             border-color: var(--accent-primary);
-            box-shadow: 0 8px 16px rgba(220, 208, 255, 0.15); /* 微调为淡紫色半透明阴影 */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
         .card-title {
@@ -143,22 +143,6 @@
         <header>
             <h1>CCgogoMKT</h1>
         </header>
-
-        <div class="section-title">品牌营销排期与服务报价</div>
-        <div class="grid">
-            <a href="服务排期表1.jpg" target="_blank" class="card">
-                <div class="card-title">Camellia 品牌内容方向定位表</div>
-                <div class="card-icon">🖼️</div>
-            </a>
-            <a href="服务排期表2.jpg" target="_blank" class="card">
-                <div class="card-title">Camellia & Luxloop 月服务费明细表（初版）</div>
-                <div class="card-icon">🖼️</div>
-            </a>
-            <a href="服务排期表3.jpg" target="_blank" class="card">
-                <div class="card-title">Camellia & Luxloop 自创/博主/Meta 打包优惠价</div>
-                <div class="card-icon">🖼️</div>
-            </a>
-        </div>
 
         <div class="section-title">MKT训练营</div>
         <div class="grid">
