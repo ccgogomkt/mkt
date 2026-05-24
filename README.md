@@ -146,11 +146,11 @@
 
         <div class="section-title">MKT训练营</div>
         <div class="grid">
-            <a href="品牌营销全案思维框架训练营.pdf" target="_blank" class="card">
+            <a href="./品牌营销全案思维框架训练营.pdf" target="_blank" class="card">
                 <div class="card-title">品牌营销全案思维框架训练营</div>
                 <div class="card-icon">📄</div>
             </a>
-            <a href="Meta Ads实战训练营.pdf" target="_blank" class="card">
+            <a href="./Meta Ads实战训练营.pdf" target="_blank" class="card">
                 <div class="card-title">Meta Ads实战训练营</div>
                 <div class="card-icon">📄</div>
             </a>
@@ -158,32 +158,8 @@
 
         <div class="section-title">出海营销</div>
         <div class="grid">
-            <a href="出海营销陪跑群.pdf" target="_blank" class="card">
+            <a href="./出海营销陪跑群.pdf" target="_blank" class="card">
                 <div class="card-title">出海营销陪跑群</div>
                 <div class="card-icon">📄</div>
             </a>
-            <a href="出海营销增长咨询.pdf" target="_blank" class="card">
-                <div class="card-title">出海营销增长咨询</div>
-                <div class="card-icon">📄</div>
-            </a>
-        </div>
-
-        <div class="section-title">MKT求职</div>
-        <div class="grid">
-            <a href="MKT1v1求职服务.png" target="_blank" class="card">
-                <div class="card-title">MKT 1v1 求职服务</div>
-                <div class="card-icon">🖼️</div>
-            </a>
-        </div>
-
-        <footer>
-            <div class="contact-box">
-                <div class="contact-title">Contact Me</div>
-                <div class="contact-info"><strong>WeChat:</strong> xieqiao172132</div>
-                <div class="contact-info"><strong>Email:</strong> ccgogo2024@gmail.com</div>
-            </div>
-        </footer>
-    </div>
-
-</body>
-</html>
+            <a href="./出海营销增长咨询.pdf
