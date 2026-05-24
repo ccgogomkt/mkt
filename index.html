@@ -6,13 +6,13 @@
     <title>CCgogoMKT</title>
     <style>
         :root {
-            --bg-color: #0f141c;
-            --container-bg: #161f2b;
-            --text-main: #f3f4f6;
-            --text-muted: #9ca3af;
-            --accent-primary: #e0a96d; 
-            --accent-secondary: #dd7a6f; 
-            --border-color: #243242;
+            --bg-color: #0f1219;          /* 深邃暗底色 */
+            --container-bg: #161a23;      /* 容器卡片背景 */
+            --text-main: #f3f4f6;          /* 主文字颜色 */
+            --text-muted: #9ca3af;         /* 次要文字颜色 */
+            --accent-primary: #c3b5e3;    /* 核心淡紫（原橘黄/暗金位置） */
+            --accent-secondary: #a78bfa;  /* 亮淡紫/丁香紫（原珊瑚红位置） */
+            --border-color: #222938;       /* 边框暗色 */
         }
 
         * {
@@ -80,7 +80,7 @@
         .card:hover {
             transform: translateY(-2px);
             border-color: var(--accent-primary);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 24px rgba(167, 139, 250, 0.15); /* 淡淡的紫色霓虹倒影 */
         }
 
         .card-title {
@@ -92,98 +92,10 @@
         .card-icon {
             color: var(--accent-secondary);
             font-size: 1.1rem;
-            opacity: 0.8;
+            opacity: 0.9;
         }
 
         footer {
             margin-top: 50px;
             padding-top: 25px;
-            border-top: 1px solid var(--border-color);
-        }
-
-        .contact-box {
-            background: linear-gradient(135deg, #161f2b 0%, #1c2635 100%);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 24px;
-            text-align: center;
-        }
-
-        .contact-title {
-            font-size: 1.15rem;
-            color: var(--text-main);
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-
-        .contact-info {
-            display: block;
-            margin: 8px 0;
-            font-size: 1rem;
-            color: var(--text-muted);
-        }
-
-        .contact-info strong {
-            color: var(--accent-primary);
-        }
-
-        @media (max-width: 600px) {
-            body {
-                padding: 20px 15px;
-            }
-            header h1 {
-                font-size: 1.8rem;
-            }
-        }
-    </style>
-</head>
-<body>
-
-    <div class="container">
-        <header>
-            <h1>CCgogoMKT</h1>
-        </header>
-
-        <div class="section-title">MKT训练营</div>
-        <div class="grid">
-            <a href="品牌营销全案思维框架训练营.pdf" target="_blank" class="card">
-                <div class="card-title">品牌营销全案思维框架训练营</div>
-                <div class="card-icon">📄</div>
-            </a>
-            <a href="Meta Ads实战训练营.pdf" target="_blank" class="card">
-                <div class="card-title">Meta Ads实战训练营</div>
-                <div class="card-icon">📄</div>
-            </a>
-        </div>
-
-        <div class="section-title">出海营销</div>
-        <div class="grid">
-            <a href="出海营销陪跑群.pdf" target="_blank" class="card">
-                <div class="card-title">出海营销陪跑群</div>
-                <div class="card-icon">📄</div>
-            </a>
-            <a href="出海营销增长咨询.pdf" target="_blank" class="card">
-                <div class="card-title">出海营销增长咨询</div>
-                <div class="card-icon">📄</div>
-            </a>
-        </div>
-
-        <div class="section-title">MKT求职</div>
-        <div class="grid">
-            <a href="MKT1v1求职服务.png" target="_blank" class="card">
-                <div class="card-title">MKT 1v1 求职服务</div>
-                <div class="card-icon">🖼️</div>
-            </a>
-        </div>
-
-        <footer>
-            <div class="contact-box">
-                <div class="contact-title">Contact Me</div>
-                <div class="contact-info"><strong>WeChat:</strong> xieqiao172132</div>
-                <div class="contact-info"><strong>Email:</strong> ccgogo2024@gmail.com</div>
-            </div>
-        </footer>
-    </div>
-
-</body>
-</html>
+            border-top:
